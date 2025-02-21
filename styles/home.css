@@ -7,7 +7,6 @@
 
 body {
     min-height: 100vh;
-    /*background: linear-gradient(45deg, #78acd1, #fe7bd9, #86a8e7, #91eac9);*/
     background: rgb(227, 182, 182);
 }   
   
@@ -18,7 +17,6 @@ body {
     left: 0;
     width: 100%;
     padding: 20px 80px;
-    /* background: rgba(255, 255, 255, .1); */
     background: rgba(180, 192, 181, 0.4);
     display: flex;
     justify-content: space-between;
@@ -52,8 +50,6 @@ body {
     border-bottom: 2px solid #000;
 }
 
-/*-- Hamburger Menu Styles --*/
-
 .hamburger {
     display: none;
     flex-direction: column;
@@ -76,7 +72,6 @@ body {
         position: absolute;
         top: 70px;
         left: 50%;
-        /*background: rgba(101, 145, 104, 0.8);*/
         border: 1px solid #ccc;
         z-index: 1;
         border-radius: 5px;
