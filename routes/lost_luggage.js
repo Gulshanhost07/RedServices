@@ -17,8 +17,7 @@ router.post("/lost_luggage", (req, res) => {
             console.error("Error inserting data: " + err.message);
             return res.status(500).json({ error: "Database error" });
         }
-        
-        // Render the Thank You page
+
         res.render("thankyou", { fullname });
     });
 });
