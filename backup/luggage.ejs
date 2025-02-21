@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home: Red Services</title>
+    <link type="text/css" rel="stylesheet" href="/home.css">
+</head>
+<body>
+    <header class="header">
+        <a class="logo" href="/home">Red Services</a>
+        
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <nav class="navbar" id="navbar">
+            <a href="/home">HOME</a>
+            <a href="about.html">ABOUT</a>
+            <a href="contact.html">CONTACT</a>
+            <a class="login-btn" href="/login">Login</a>
+        </nav>
+    </header>
+
+    <main class="main">
+        <form class="login-container" action="/login" method="POST">
+            <h2 class="login-heading">Log<span>in</span></h2>
+            <div class="input-group">
+                <input type="text" placeholder="Username" id="usernameInput" name="username" required>
+            </div>
+            <div class="input-group">
+                <input type="password" placeholder="Password" id="passwordInput" name="password" required>
+            </div>
+            <button type="submit" class="login-btn">Submit</button>
+        </form>
+    </main>
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+  const hamburger = document.getElementById("hamburger");
+  const navbar = document.getElementById("navbar");
+
+  hamburger.addEventListener("click", function() {
+      navbar.classList.toggle("active");
+  });
+});
+    </script>
+</body>
+</html>
