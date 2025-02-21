@@ -1,13 +1,11 @@
 const express = require("express");
-const db = require("../config/db"); // Ensure this file contains the correct MySQL connection
+const db = require("../config/db");
 const router = express.Router();
 
-// Render the tracking page
 router.get("/track_status", (req, res) => {
-    res.render("status"); // Renders status.ejs
+    res.render("status");
 });
 
-// Handle tracking request
 router.post("/track_status", (req, res) => {
     const { phone } = req.body;
 
@@ -27,7 +25,7 @@ router.post("/track_status", (req, res) => {
             return res.status(404).json({ error: "No records found for this phone number" });
         }
 
-        res.json(results); // Send results as JSON
+        res.json(results);
     });
 });
 
